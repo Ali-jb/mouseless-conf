@@ -1,6 +1,7 @@
 # the keyboard devices it reads from, if no devices are specified, it reads from all
 devices:
   - "/dev/input/event2"
+  - "/dev/input/event16"
 # this is executed when mouseless starts, e.g. useful for setting the keyboard layout
 # startCommand: "setxkbmap de"
 
@@ -24,7 +25,7 @@ mouseDecelerationCurve: 3.0
 # enables auto-repeat of a tap key when pressed twice within this duration
 quickTapTime: 150
 # two keys must be pressed within this duration to activate a combo (e.g. f+d)
-comboTime: 25
+comboTime: 25 
 
 # the rest of the config defines the layers with their bindings
 layers:
@@ -59,7 +60,7 @@ layers:
     j: move -1  0
     k: move  0  1
     i: move  0 -1
-    p: scroll up
+    o: scroll up
     n: scroll down
     leftalt: speed 4.0
     e: speed 0.3
